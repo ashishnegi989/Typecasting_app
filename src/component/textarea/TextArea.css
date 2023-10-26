@@ -1,0 +1,86 @@
+/* MyComponent.css */
+.styled-textarea {
+    width: 90%;
+    height: 300px; /* Set the desired height */
+    padding: 16px;
+    border: 2px solid #007bff; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    resize: none; /* Disable resizing */
+    font-size: 18px; /* Font size */
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5; /* Background color */
+    transition: border-color 0.3s ease; /* Add a transition effect to the border */
+  }
+  
+  .styled-textarea:focus {
+    border-color: #ff6a00; /* Highlight border on focus */
+    outline: none; /* Remove the default outline */
+    background-color: #fff; /* Change background color on focus */
+  }
+  
+  /* Optional: Add a placeholder style */
+  .styled-textarea::placeholder {
+    color: #777;
+    font-size: 16px;
+  }
+  
+  /* Optional: Add a hover effect */
+  .styled-textarea:hover {
+    border-color: #0056b3; /* Change border color on hover */
+  }
+  
+
+
+  /* button styles */
+
+  /* MyComponent.css */
+
+.styled-button {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding for button size */
+  font-size: 18px; /* Font size */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a transition effect */
+  text-decoration: none; /* Remove underline */
+  margin-top: 50px;
+  margin-inline: 20px;
+
+  /* Optional: Add a hover effect */
+  &:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }
+}
+
+/* Optional: Add additional styles for different button states */
+.styled-button:active {
+  background-color: #004a99; /* Change background color when button is clicked */
+}
+
+.styled-button:focus {
+  outline: none; /* Remove the default focus outline */
+}
+
+.color-first{
+  background-color: #007bff; /* Button background color */
+}
+
+.color-sec{
+  background-color: #f700ff; /* Button background color */
+}
+
+.color-third{
+  background-color: #ff1e00; /* Button background color */
+}
+
+.color-fourth{
+  background-color: #09ff00; /* Button background color */
+}
+
+.textarea-italic {
+  font-style: italic !important;
+}
+
