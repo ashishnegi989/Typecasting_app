@@ -23,11 +23,23 @@ const TextArea = () => {
     setTextItalic('textarea-italic');
   };
 
+  const handleClear = ()=>{
+    // console.log("clear text")
+    setTextdata("");
+
+
+  }
+
+
+
+
+  
+
   return (
-    <div>
+    <div className="container">
       <textarea
         className={`styled-textarea ${textitalic}`}
-        placeholder="Enter your text here"
+        placeholder="Enter your text here" 
         value={textdata}
         onChange={(e) => {
           setTextdata(e.target.value);
@@ -47,7 +59,14 @@ const TextArea = () => {
         Italic
       </button>
 
-      <button className="styled-button color-fourth">Click Me</button>
+      <button className="styled-button color-fourth" onClick={handleClear}>Clear Text</button>
+
+
+      <div className="container summery my-5">
+      <h2>Your Text Summary</h2>
+      <p>You type {textdata.split(" ").length - 1} words and {textdata.length} charactors</p>
+
+      </div>
     </div>
   );
 };
